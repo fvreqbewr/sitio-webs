@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/Golden Pixelator.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="style.css">
+    <title>Examen 4to Parcial</title>
+</head>
+<body>
+    <div class="hero" id="hero">
+        <!-- Sección principal con el título del examen -->
+        <h1>EXAMEN DE DISEÑO WEB</h1>
+        <p>
+            <!-- Texto decorativo que destaca los lenguajes utilizados -->
+            <span class="color-red">HTML</span> • 
+            <span class="color-blue">CSS</span> • 
+            <span class="color-yellow">Javascript</span>
+        </p>
+    </div>
+
+    <nav id="menu">
+        <!-- Menú de navegación con enlaces a las diferentes secciones -->
+        <a href="#1">Pagina 66 y 104</a>
+        <a href="#2">Pagina 72</a>
+        <a href="#3">Pagina 222</a>
+        <a href="#4">Pagina 255</a>
+        <span class="indicador" id="indicador"></span>
+    </nav>
+
+    <div class="secciones">
+        <div class="seccion" id="1">
+            <div class="card">
+                <!-- Sección correspondiente a las páginas 66 y 104 -->
+                <h1>Pagina 66 y 104</h1>
+                <div class="book">
+                    <a href="./Codigos Web/pag66 y 104/index.html" target="_blank">
+                        <img src="img/pag 66 y 104.png" alt="img1" class="book-img">
+                    </a>
+                </div>
+                <p>Esta pagina web tienen tanto el HTML como el CSS provistos por el libro y como se puede observar en la imagen, consiste en un formulario donde se registran inventarios del negocio "Ediciones Fares". Se puede asignar un codigo, precio y fecha a cualquier objeto que subamos por medio del boton "Seleccionar Archivo". La decoración fue dada por el libro.</p>
+            </div>
+        </div>
+
+        <!-- Repetir estructura para las otras secciones -->
+        <div class="seccion" id="2">
+            <div class="card">
+                <h1>Pagina 72</h1>
+                <div class="book">
+                    <a href="./Codigos Web/pag72/index.html" target="_blank">
+                        <img src="img/pag72.png" alt="img2" class="book-img">
+                    </a>
+                </div>
+                <p>Esta pagina web tenia solo el HTML provisto por el libro pero con algunos errores, por lo que tuve que agregarle el CSS y el funcionamiento que tienen es el de registrar los datos para conseguir libros de las "Ediciones Fares" con casillas para seleccionar el curso y un boton para enviar datos.</p>
+            </div>
+        </div>
+
+        <div class="seccion" id="3">
+            <div class="card">
+                <h1>Pagina 222</h1>
+                <div class="book">
+                    <a href="./Codigos Web/pag222/index.html" target="_blank">
+                        <img src="img/prueba.png" alt="img3" class="book-img">
+                    </a>
+                </div>
+                <p>Este formulario originalmente usaba PHP y W3CSS como bases pero como no estamos trabajando con eso tuve que alteral el codigo y usar solo etiquetas HTML y CSS, el diseño aun no quedó como se muestra en el libro pero quizas haga cambios mas adelante.</p>
+            </div>
+        </div>
+
+        <div class="seccion" id="4">
+            <div class="card">
+                <h1>Pagina 255</h1>
+                <div class="book">
+                    <a href="./Codigos Web/pag255/index.html" target="_blank">
+                        <img src="img/pag255.png" alt="img4" class="book-img">
+                    </a>
+                </div>
+                <p>Esta pagina web consiste en una galería de imagenes y el libro solo dejo una imagen como instrucción a seguir, por lo que tanto el HTML como el CSS lo tuve que hacer, ademas las imagenes tienen un hover y hypervinculo especiales para tener una "vista previa". Como el resto de codigos decidí utilizar libros de la "Ediciones Fares" como base.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón para regresar al inicio de la página -->
+    <button id="btnScrollTop" title="^">&#8679;</button>
+
+    <footer>
+        <p>© 2024 Jair Castellanos</p>
+    </footer>
+
+    <!-- Archivo JavaScript para funcionalidades adicionales -->
+    <script src="script.js"></script>
+</body>

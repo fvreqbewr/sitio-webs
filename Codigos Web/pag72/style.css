@@ -1,0 +1,155 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container to centralize the page and limit width */
+.container {
+    max-width: 900px; /* Reducción del ancho máximo */
+    max-height: 1200px; /* Limitar altura */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Añadido para que el contenido adicional se desplace si es necesario */
+}
+
+/* Header styling */
+header {
+    background-color: #110e2e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #202342;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    display: inline-block;
+    width: 150px; /* Reducción del ancho de los enlaces del nav */
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0003ac;
+    background-color: #555b9e;
+}
+
+nav div {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul {
+    display: none;
+    position: absolute;
+    background-color: #31355f;
+    padding: 10px;
+    list-style-type: none;
+    margin: 0;
+    text-align: left;
+}
+
+nav div:hover ul {
+    display: block;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+}
+
+/* Main section styling */
+section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Form and input fields */
+form p {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 80%; /* Reducción del tamaño de los campos de texto */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Adjust button styles */
+button {
+    background-color: #491212;
+    color: #fff;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #470065;
+    color: #ffffff;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Ajuste para pantallas medianas */
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%; /* Ajuste del tamaño de inputs en pantallas pequeñas */
+    }
+
+    nav a {
+        width: 120px; /* Ajuste del tamaño de los enlaces en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        max-width: 100%; /* Ajuste para pantallas pequeñas */
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+    }
+
+    nav a {
+        width: 100px; /* Ajuste para dispositivos móviles */
+        padding: 8px;
+    }
+}
